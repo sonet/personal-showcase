@@ -1,0 +1,143 @@
+Create a polished, modern single-page portfolio landing page design for a senior technical candidate. This is design-first only: no backend logic, no real AI integration yet, but include the visual structure, layout, buttons, sections, and dialog/modal designs so functionality can be wired in later.
+
+Overall style:
+- Clean, premium, editorial-tech aesthetic
+- Feels credible, elegant, and slightly high-end
+- Minimal but not empty
+- Strong typography hierarchy
+- Serif font for the person’s name and initials/logo
+- Sans-serif for navigation, labels, buttons, and body text
+- Light theme
+- Generous whitespace
+- Subtle borders, refined shadows, soft section separation
+- Make it feel like a cross between a personal portfolio, executive profile, and modern AI product landing page
+
+Page type:
+- Single-page application (SPA)
+- Smooth scroll between sections
+- Sticky top navigation
+- Desktop-first but responsive
+- Build as a reusable component-based layout
+
+Top header / hero:
+- Top-left: logo made from initials in a serif font inside a minimal mark or monogram treatment
+- Top-right navigation:
+  - Experience
+  - Fit Check
+  - Ask AI
+- “Ask AI” in the nav should look like the primary CTA button
+
+Hero section content:
+- Small status/info line above the title:
+  - “Open to dev roles at mission-driven, infrastructure, platform, civic, public-sector, and high-impact organizations”
+- Main site title:
+  - Large serif name headline
+  - Example placeholder: “Adam Sk.”
+- Subtitle / teaser under the name:
+  - “Technical Lead: full-stack development, Data, DevOps, End-to-End Delivery.”
+- Small tag row under subtitle:
+  - Platform & Web Systems
+  - Data & Analytics
+  - DevOps & Cloud
+- Large primary CTA button:
+  - “Ask AI about Adam”
+- Secondary visual cue:
+  - “Scroll to explore”
+- The hero should feel confident, calm, and premium, not flashy
+
+Main sections:
+1. Hero
+2. Experience
+3. Skills
+4. Fit Check
+5. Ask AI dialog trigger area / footer CTA
+
+Experience section:
+- Standard resume-style timeline or stacked cards
+- Each role should be clearly structured with:
+  - job title
+  - organization
+  - dates
+  - short summary
+  - 3–4 bullet achievements
+- Each experience item must include an expandable inline control:
+  - “Show AI context”
+  - when expanded, label changes to “Hide AI context”
+- The AI context area should appear as a beautifully styled expandable panel below the role
+- This panel should visually look like an AI-generated explanation block, but still fit the premium portfolio design
+- The AI context panel should include:
+  - Context
+  - What changed
+  - Why it mattered
+  - Lessons learned
+- Use placeholder content for now
+
+Skills section:
+- Three-column layout or three visually separated boxes/cards
+- Column titles:
+  - Strong
+  - Moderate
+  - Gaps
+- Each column should contain example skill tags/chips
+- “Strong” should look most emphasized
+- “Gaps” should still look intentional and professional, not negative
+- Include a short supporting sentence above this section that frames this as clarity and self-awareness
+
+Fit Check section:
+- Design a section for a future job-description fit analysis tool
+- Include:
+  - section title: “Fit Check”
+  - short explanatory text
+  - large text area for pasting a job description
+  - button: “Analyze Fit”
+- Since functionality is not implemented yet, create a polished mock result state below the form
+- The mock result card should show:
+  - Overall Fit: Strong / Moderate / Limited
+  - Matching strengths
+  - Transferable experience
+  - Potential gaps
+- Keep it visually elegant and product-like
+
+Ask AI dialog / modal:
+- Include a modal dialog design that opens when clicking “Ask AI about Adam”
+- This is visual only for now
+- The dialog should feel like a premium AI assistant interface
+- Modal contents:
+  - title: “Ask AI about Adam”
+  - short helper text: “Ask about experience, leadership, technical depth, or fit.”
+  - input box or chat prompt field
+  - submit button
+  - sample suggested prompts shown as clickable pills:
+    - “What kind of leadership experience does he have?”
+    - “Has he worked on platform engineering?”
+    - “What roles is he strongest fit for?”
+    - “What are his strongest technical areas?”
+- Also show a mock conversation area in the modal with 1–2 sample responses
+- Response cards should look clean and readable, not like a consumer chatbot
+
+Design details:
+- Use subtle animations and hover states
+- Rounded corners should be modern but restrained
+- Avoid loud gradients or trendy gimmicks
+- Use muted neutrals with a professional accent color
+- The overall tone should signal technical depth, maturity, and trust
+- Keep the design suitable for a senior engineer / platform / infrastructure / developer tools profile
+
+Typography:
+- Name/logo in elegant serif
+- Everything else in clean modern sans-serif
+- Strong emphasis on hierarchy and readability
+
+Content placeholders:
+Use realistic placeholder content for:
+- 3 experience roles
+- 3–5 skills per column
+- 1 mock fit analysis result
+- 2 mock AI responses
+
+Important:
+- This is design mode only
+- Do not implement real AI, backend, API calls, auth, or persistence
+- Focus on a visually complete, convincing first page with all sections
+- Implemenent modals/dialogs with placeholder content
+- Make the result feel like a sophisticated personal AI portfolio for a senior technical professional
