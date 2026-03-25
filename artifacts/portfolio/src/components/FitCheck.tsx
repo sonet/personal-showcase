@@ -19,11 +19,11 @@ export function FitCheck() {
 
   return (
     <section id="fit-check" className="py-24 bg-muted/30 border-y border-border/50">
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="mb-10 text-center">
+      <div className="max-w-3xl mx-auto px-6">
+        <div className="mb-10">
           <h2 className="text-3xl font-serif font-bold text-foreground">Fit Check</h2>
-          <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
-            Paste a job description to see how Adam's profile aligns with the role requirements based on his actual capabilities.
+          <p className="text-muted-foreground mt-2 text-sm">
+            Paste a job description to see how Adam's profile aligns with the role.
           </p>
         </div>
 

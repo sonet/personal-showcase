@@ -33,11 +33,12 @@ const SKILL_CATEGORIES = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-24 max-w-6xl mx-auto px-6">
-      <div className="mb-12 text-center max-w-2xl mx-auto">
+    <section id="skills" className="py-24 px-6">
+      <div className="max-w-3xl mx-auto mb-10">
         <h2 className="text-3xl font-serif font-bold text-foreground">Skills Profile</h2>
-        <p className="text-muted-foreground mt-3">Listed with honest self-assessment — clarity over optics.</p>
+        <p className="text-muted-foreground mt-2 text-sm">Listed with honest self-assessment — clarity over optics.</p>
       </div>
+      <div className="max-w-3xl mx-auto">
 
       <div className="grid md:grid-cols-3 gap-6">
         {SKILL_CATEGORIES.map((category, idx) => (
@@ -66,6 +67,7 @@ export function Skills() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
