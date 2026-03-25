@@ -7,7 +7,7 @@ interface HeroProps {
 
 export function Hero({ onOpenAskAI }: HeroProps) {
   return (
-    <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 px-6">
+    <section className="relative pt-28 pb-6 md:pt-36 md:pb-8 px-6">
       <div className="max-w-5xl mx-auto">
 
       {/* Status Pill */}
