@@ -26,7 +26,7 @@ export function Hero({ onOpenAskAI }: HeroProps) {
           "animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100"
         )}
       >
-        Adam Sk.
+        Adam Sk
       </h1>
 
       {/* Role title — accent color */}
@@ -36,7 +36,7 @@ export function Hero({ onOpenAskAI }: HeroProps) {
 
       {/* Description */}
       <p className="text-base md:text-lg text-muted-foreground mb-6 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-300">
-        Full-stack development, Data, DevOps, and End-to-End Delivery
+        Full-stack dev, Data, DevOps, and End-to-End Delivery
       </p>
 
       {/* Tag pills — minimal, no icons */}
@@ -64,7 +64,7 @@ export function Hero({ onOpenAskAI }: HeroProps) {
           )}
         >
           <MessageSquare className="w-4 h-4" />
-          Ask AI about Adam
+          Ask AI about me
         </button>
 
         {/* Scroll cue — to the right of CTA */}

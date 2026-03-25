@@ -21,7 +21,7 @@ export default function Home() {
       </main>
 
       <footer className="py-12 text-center text-muted-foreground text-sm border-t border-border/50">
-        <p>© {new Date().getFullYear()} Adam Sk. | Clean Premium Editorial-Tech Design</p>
+        <p>© {new Date().getFullYear()} Adam Sk | Full-stack dev, Data, DevOps, and End-to-End Delivery</p>
       </footer>
 
       <AskAIModal 
