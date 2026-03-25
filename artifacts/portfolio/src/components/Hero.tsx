@@ -25,9 +25,7 @@ export function Hero({ onOpenAskAI }: HeroProps) {
           "text-[clamp(3.5rem,9vw,8rem)]",
           "animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100"
         )}
-      >
-        Adam Sk.
-      </h1>
+      >Adam Sonet</h1>
 
       {/* Role title — accent color */}
       <p className="font-serif text-2xl md:text-3xl font-semibold text-primary mb-2 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-200">
