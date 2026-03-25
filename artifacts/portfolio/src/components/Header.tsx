@@ -12,9 +12,7 @@ export function Header({ onOpenAskAI }: HeaderProps) {
         <a 
           href="#" 
           className="text-2xl font-serif font-semibold tracking-tight text-foreground hover:text-primary transition-colors flex items-center gap-1"
-        >
-          AS.
-        </a>
+        >AS</a>
         
         <nav className="flex items-center gap-6">
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground mr-4">
