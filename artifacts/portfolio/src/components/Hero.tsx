@@ -72,7 +72,7 @@ export function Hero({ onOpenAskAI }: HeroProps) {
           </span>
           <svg
             width="16"
-            height="48"
+            height="185"
             viewBox="0 0 26.458333 79.375"
             xmlns="http://www.w3.org/2000/svg"
             className="text-muted-foreground/50"
