@@ -30,7 +30,7 @@ export function Hero({ onOpenAskAI }: HeroProps) {
       </h1>
 
       {/* Role title — accent color */}
-      <p className="text-lg md:text-xl font-semibold text-primary mb-2 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-200">
+      <p className="font-serif text-2xl md:text-3xl font-semibold text-primary mb-2 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-200">
         Technical Lead
       </p>
 
