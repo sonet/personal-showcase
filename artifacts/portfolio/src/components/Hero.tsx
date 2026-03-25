@@ -13,9 +13,7 @@ export function Hero({ onOpenAskAI }: HeroProps) {
       {/* Status Pill */}
       <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted border border-border text-muted-foreground mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
         <span className="w-2 h-2 rounded-full bg-primary shrink-0" />
-        <span className="text-xs font-medium">
-          Open to dev roles at mission-driven, infrastructure, platform, civic, public-sector, and high-impact organizations
-        </span>
+        <span className="text-xs font-medium">Open to technical lead roles at mission-driven, non-profit, public-sector, and high-impact organizations</span>
       </div>
 
       {/* Name — full width, massive */}
