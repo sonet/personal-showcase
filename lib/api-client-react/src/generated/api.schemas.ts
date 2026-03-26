@@ -8,3 +8,49 @@
 export interface HealthStatus {
   status: string;
 }
+
+export interface Profile {
+  name: string;
+  initials: string;
+  title: string;
+  description: string;
+  status: string;
+  tags: string[];
+}
+
+export interface ExperienceAIContext {
+  context: string;
+  changed: string;
+  mattered: string;
+  lessons: string;
+}
+
+export interface Experience {
+  id: string;
+  title: string;
+  company: string;
+  period: string;
+  summary: string;
+  bullets: string[];
+  aiContext: ExperienceAIContext;
+}
+
+export type SkillLevel = (typeof SkillLevel)[keyof typeof SkillLevel];
+
+export const SkillLevel = {
+  Strong: "Strong",
+  Moderate: "Moderate",
+  Gaps: "Gaps",
+} as const;
+
+export interface SkillCategory {
+  level: SkillLevel;
+  description: string;
+  skills: string[];
+}
+
+export interface ProfileResponse {
+  profile: Profile;
+  experiences: Experience[];
+  skills: SkillCategory[];
+}

@@ -1,6 +1,5 @@
 openapi: 3.1.0
 info:
-  # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
   description: API specification
@@ -10,6 +9,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: profile
+    description: Portfolio profile data
 paths:
   /healthz:
     get:
@@ -24,6 +25,21 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+
+  /profile:
+    get:
+      operationId: getProfile
+      tags: [profile]
+      summary: Get full profile data
+      description: Returns profile, experience items, and skill categories
+      responses:
+        "200":
+          description: Profile data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProfileResponse"
+
 components:
   schemas:
     HealthStatus:
@@ -34,3 +50,113 @@ components:
       required:
         - status
 
+    Profile:
+      type: object
+      properties:
+        name:
+          type: string
+        initials:
+          type: string
+        title:
+          type: string
+        description:
+          type: string
+        status:
+          type: string
+        tags:
+          type: array
+          items:
+            type: string
+      required:
+        - name
+        - initials
+        - title
+        - description
+        - status
+        - tags
+
+    ExperienceAIContext:
+      type: object
+      properties:
+        context:
+          type: string
+        changed:
+          type: string
+        mattered:
+          type: string
+        lessons:
+          type: string
+      required:
+        - context
+        - changed
+        - mattered
+        - lessons
+
+    Experience:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        company:
+          type: string
+        period:
+          type: string
+        summary:
+          type: string
+        bullets:
+          type: array
+          items:
+            type: string
+        aiContext:
+          $ref: "#/components/schemas/ExperienceAIContext"
+      required:
+        - id
+        - title
+        - company
+        - period
+        - summary
+        - bullets
+        - aiContext
+
+    SkillLevel:
+      type: string
+      enum:
+        - Strong
+        - Moderate
+        - Gaps
+
+    SkillCategory:
+      type: object
+      properties:
+        level:
+          $ref: "#/components/schemas/SkillLevel"
+        description:
+          type: string
+        skills:
+          type: array
+          items:
+            type: string
+      required:
+        - level
+        - description
+        - skills
+
+    ProfileResponse:
+      type: object
+      properties:
+        profile:
+          $ref: "#/components/schemas/Profile"
+        experiences:
+          type: array
+          items:
+            $ref: "#/components/schemas/Experience"
+        skills:
+          type: array
+          items:
+            $ref: "#/components/schemas/SkillCategory"
+      required:
+        - profile
+        - experiences
+        - skills

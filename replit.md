@@ -91,6 +91,27 @@ Generated Zod schemas from the OpenAPI spec (e.g. `HealthCheckResponse`). Used b
 
 Generated React Query hooks and fetch client from the OpenAPI spec (e.g. `useHealthCheck`, `healthCheck`).
 
+### `artifacts/portfolio` (`@workspace/portfolio`)
+
+React + Vite single-page portfolio for "Adam Sk." (Adam Sonet). All content is served from the API.
+
+- Dark theme with teal accent (`hsl(158 52% 48%)`)
+- Fonts: Playfair Display (serif) + Inter (sans-serif)
+- Sections: Hero, Experience (expandable AI context panels), Skills, Fit Check, Ask AI modal
+- Fetches all data via `useGetProfile` (generated React Query hook) from `GET /api/profile`
+- Components accept typed props — no hardcoded content
+- `src/pages/Home.tsx` — data-fetching root; passes `profile`, `experiences`, `skills` down as props
+- `src/components/Hero.tsx` — receives `Profile` prop
+- `src/components/Experience.tsx` — receives `Experience[]` prop; toggles AI context panels
+- `src/components/Skills.tsx` — receives `SkillCategory[]` prop; maps `SkillLevel` to visual config
+- No AI calls yet; AI context is structured mock data
+
+### API routes (api-server)
+
+- `GET /api/healthz` — health check
+- `GET /api/profile` — returns `{ profile, experiences, skills }` (validated via `GetProfileResponse` Zod schema)
+- Mock data lives in `artifacts/api-server/src/data/mockData.ts`
+
 ### `scripts` (`@workspace/scripts`)
 
 Utility scripts package. Each script is a `.ts` file in `src/` with a corresponding npm script in `package.json`. Run scripts via `pnpm --filter @workspace/scripts run <script>`. Scripts can import any workspace package (e.g., `@workspace/db`) by adding it as a dependency in `scripts/package.json`.

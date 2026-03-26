@@ -2,25 +2,28 @@ import { Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface HeaderProps {
+  initials: string;
   onOpenAskAI: () => void;
 }
 
-export function Header({ onOpenAskAI }: HeaderProps) {
+export function Header({ initials, onOpenAskAI }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50 transition-all duration-300">
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a 
-          href="#" 
+        <a
+          href="#"
           className="text-2xl font-serif font-semibold tracking-tight text-foreground hover:text-primary transition-colors flex items-center gap-1"
-        >AS</a>
-        
+        >
+          {initials}
+        </a>
+
         <nav className="flex items-center gap-6">
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground mr-4">
             <a href="#experience" className="hover:text-foreground transition-colors py-2">Experience</a>
             <a href="#skills" className="hover:text-foreground transition-colors py-2">Skills</a>
             <a href="#fit-check" className="hover:text-foreground transition-colors py-2">Fit Check</a>
           </div>
-          
+
           <button
             onClick={onOpenAskAI}
             className={cn(

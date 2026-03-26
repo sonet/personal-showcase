@@ -14,3 +14,41 @@ import * as zod from "zod";
 export const HealthCheckResponse = zod.object({
   status: zod.string(),
 });
+
+/**
+ * Returns profile, experience items, and skill categories
+ * @summary Get full profile data
+ */
+export const GetProfileResponse = zod.object({
+  profile: zod.object({
+    name: zod.string(),
+    initials: zod.string(),
+    title: zod.string(),
+    description: zod.string(),
+    status: zod.string(),
+    tags: zod.array(zod.string()),
+  }),
+  experiences: zod.array(
+    zod.object({
+      id: zod.string(),
+      title: zod.string(),
+      company: zod.string(),
+      period: zod.string(),
+      summary: zod.string(),
+      bullets: zod.array(zod.string()),
+      aiContext: zod.object({
+        context: zod.string(),
+        changed: zod.string(),
+        mattered: zod.string(),
+        lessons: zod.string(),
+      }),
+    }),
+  ),
+  skills: zod.array(
+    zod.object({
+      level: zod.enum(["Strong", "Moderate", "Gaps"]),
+      description: zod.string(),
+      skills: zod.array(zod.string()),
+    }),
+  ),
+});

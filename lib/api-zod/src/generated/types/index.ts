@@ -6,4 +6,10 @@
  * OpenAPI spec version: 0.1.0
  */
 
+export * from "./experience";
+export * from "./experienceAIContext";
 export * from "./healthStatus";
+export * from "./profile";
+export * from "./profileResponse";
+export * from "./skillCategory";
+export * from "./skillLevel";
